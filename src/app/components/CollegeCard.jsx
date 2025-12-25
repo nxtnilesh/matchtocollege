@@ -1,3 +1,4 @@
+"use client";
 import { Rating } from "@mui/material";
 import { FaCity } from "react-icons/fa";
 
