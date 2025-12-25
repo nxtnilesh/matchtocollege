@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🎓 College Explorer App
 
-## Getting Started
+This repository contains a simple, responsive **College Explorer web application** built using **Next.js** and **Tailwind CSS**. The application allows users to browse a list of colleges, search by name, and sort colleges based on annual fees.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## ✨ Features
+
+- **College Listing:** Displays colleges as responsive cards.
+- **Search Functionality:** Real-time filtering by college name.
+- **Sorting:** Sort colleges by annual fees (Low → High).
+- **Reusable Components:** Clean separation using `SearchBar` and `CollegeCard`.
+- **Responsive Design:**  
+  - Desktop: 3 cards per row  
+  - Tablet: 2 cards per row  
+  - Mobile: 1 card per row
+- **Visual Enhancements:** City icons and star-based ratings.
+
+---
+
+## 🛠️ Technology Stack
+
+- **Framework:** Next.js 
+- **Language:** JavaScript
+- **Styling:** Tailwind CSS
+- **Icons:** react-icons
+- **UI Component:** Material UI (`Rating`)
+
+---
+
+## 📂 Project Structure
+```
+college-explorer/
+├── app/
+│ └── page.js # Main page (search, sort, layout)
+├── components/
+│ ├── SearchBar.jsx # Search input with icon & sort button
+│ └── CollegeCard.jsx # Individual college card UI
+├── data/
+│ └── colleges.js # Mock college data
+├── public/
+├── package.json
+├── tailwind.config.js
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation Steps
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. **Clone the Repository**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+git clone https://github.com/nxtnilesh/matchtocollege.git
+cd matchtocollege
+```
+```
+npm i
+npm run dev
+```
+---
+## 📸 Screenshots
 
-## Learn More
+### 1. Mobile View
+<img src="./screenshots/mobile.png" alt="Screenshot of the mobile view" width="300"/>
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 2. Desktop View
+<img src="./screenshots/desktop.png" alt="Screenshot of the desktop view" width="600"/>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+### 3. Search & Filter View
+<img src="./screenshots/search.png" alt="Screenshot of the search and filter functionality" width="600"/>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+***
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
